@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-01T10:47:01.234380293Z",
+  "printing_press_version": "4.5.2",
+  "api_name": "seranking",
+  "display_name": "Se Ranking",
+  "cli_name": "seranking-pp-cli",
+  "owner": "pimmetjeoss",
+  "printer": "Pimmetjeoss",
+  "printer_name": "Pimmetjeoss",
+  "spec_url": "https://seranking.com/api.html",
+  "spec_path": "/home/pimmetje/.hermes/profiles/cli/workspace/projects/seranking-openapi.json",
+  "spec_format": "openapi3",
+  "spec_checksum": "sha256:3df9a1f48c3ee68d5f5eb30b13cb49e4251fac071af9edb4d5190d850a3996d8",
+  "mcp_binary": "seranking-pp-mcp",
+  "mcp_tool_count": 85,
+  "mcp_ready": "full",
+  "api_version": "2026.06.01",
+  "auth_type": "api_key",
+  "auth_env_vars": [
+    "SE_RANKING_API_KEY",
+    "SE_RANKING_API_KEY_QUERY"
+  ]
+}

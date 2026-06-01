@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "applied_at": "2026-06-01",
+  "base_run_id": "manual-generate-seranking-2026-06-01",
+  "base_printing_press_version": "4.5.2",
+  "patches": [
+    {
+      "id": "friendly-api-key-env-alias",
+      "summary": "Accept SE_RANKING_API_KEY as an alias for the generated SE_RANKING_API_KEY_QUERY environment variable.",
+      "reason": "SE Ranking's official docs talk about an API key/apikey query parameter; the alias is easier and safer for agents to remember while preserving generator compatibility.",
+      "files": ["internal/config/config.go", "internal/cli/doctor.go"],
+      "validated_outcome": "go test ./... passes; doctor uses env:SE_RANKING_API_KEY when the alias is set."
+    }
+  ]
+}
