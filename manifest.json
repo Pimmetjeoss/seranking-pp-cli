@@ -15,7 +15,8 @@
       "command": "${__dirname}/bin/seranking-pp-mcp",
       "args": [],
       "env": {
-        "SE_RANKING_API_KEY_QUERY": "${user_config.se_ranking_api_key_query}"
+        "SE_RANKING_API_KEY_QUERY": "${user_config.se_ranking_api_key_query}",
+        "SE_RANKING_API_KEY": "${user_config.se_ranking_api_key}"
       }
     }
   },
@@ -23,7 +24,14 @@
     "se_ranking_api_key_query": {
       "type": "string",
       "title": "SE_RANKING_API_KEY_QUERY",
-      "description": "Sets SE_RANKING_API_KEY_QUERY for the Se Ranking MCP server.",
+      "description": "Sets SE_RANKING_API_KEY_QUERY for generated per-call compatibility.",
+      "sensitive": true,
+      "required": false
+    },
+    "se_ranking_api_key": {
+      "type": "string",
+      "title": "SE_RANKING_API_KEY",
+      "description": "Sets SE_RANKING_API_KEY for the Se Ranking MCP server.",
       "sensitive": true,
       "required": true
     }
