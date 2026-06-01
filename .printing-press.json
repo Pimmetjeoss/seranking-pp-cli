@@ -52,5 +52,8 @@
     }
   ],
   "spec_source": "official_docs_openapi",
-  "creator": "Pimmetjeoss"
+  "creator": {
+    "handle": "Pimmetjeoss",
+    "name": "Pimmetjeoss"
+  }
 }
