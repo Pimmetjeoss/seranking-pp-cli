@@ -55,13 +55,13 @@ func Load(configPath string) (*Config, error) {
 	// PATCH: Accept the human-friendly SE_RANKING_API_KEY alias in addition to
 	// the generator-derived SE_RANKING_API_KEY_QUERY name. SE Ranking's official
 	// docs describe an API key, not an "API key query" credential.
-	if v := os.Getenv("SE_RANKING_API_KEY"); v != "" {
-		cfg.SeRankingApiKeyQuery = v
-		cfg.AuthSource = "env:SE_RANKING_API_KEY"
-	}
 	if v := os.Getenv("SE_RANKING_API_KEY_QUERY"); v != "" {
 		cfg.SeRankingApiKeyQuery = v
 		cfg.AuthSource = "env:SE_RANKING_API_KEY_QUERY"
+	}
+	if v := os.Getenv("SE_RANKING_API_KEY"); v != "" {
+		cfg.SeRankingApiKeyQuery = v
+		cfg.AuthSource = "env:SE_RANKING_API_KEY"
 	}
 
 	// Label config-file-derived credentials so doctor can distinguish

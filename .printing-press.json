@@ -50,5 +50,7 @@
       "command": "seranking-pp-cli site-audit get-audit-pages-by-issue",
       "description": "Inspect audited pages by issue so agents can group technical SEO problems into actionable tickets."
     }
-  ]
+  ],
+  "spec_source": "official_docs_openapi",
+  "creator": "Pimmetjeoss"
 }
